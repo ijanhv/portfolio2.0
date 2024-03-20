@@ -12,7 +12,7 @@ export const Scroll = () => {
       <div className="relative">
         <div className="h-0.5 bg-zinc-800 w-full absolute" />
         <motion.div
-          className=" h-0.5 bg-zinc-700 w-full origin-left absolute
+          className=" h-0.5 bg-zinc-500 w-full origin-left absolute
     "
           style={{ scaleX: scrollYProgress }}
         />
