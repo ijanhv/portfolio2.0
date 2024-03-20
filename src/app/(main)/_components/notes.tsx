@@ -40,15 +40,16 @@ export const Notes = () => {
               <hr className="w-full bg-foreground/60 h-0.5" />
             </div>
 
-            {/* <div className="h-full w-full  animation	">
-              <Image
+       {/* <div className="h-full w-full  noise	">
+         <Image
                 src="https://framerusercontent.com/images/u5jNVG9wj9EcOdKVCMRYRudfPs.jpg?scale-down-to=1024"
                 fill
                 className="object-cover w-full h-full  opacity-85"
                 alt="about"
                 unoptimized
-              />
-            </div> */}
+              /> 
+            </div>  */}
+
 
             <div className="flex flex-col gap-4 w-full mt-20 ">
               {notes.map((note, i) => (
@@ -93,11 +94,11 @@ const SingNote = ({
 
       {show && (
         <motion.div
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: -130, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: -30, opacity: 0 }}
-          transition={{ duration: 0.2 }}
-          className="h-40 w-32 absolute right-[9.7rem] animation"
+          transition={{ duration: 0.4 }}
+          className="h-48 w-[154px] absolute right-[9.7rem] noise"
         >
           <Image
             src={image}

@@ -13,7 +13,7 @@ export const Navbar = () => {
     },
     {
       name: "about",
-      href: "/",
+      href: "/about",
     },
     {
       name: "notes",

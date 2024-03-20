@@ -19,12 +19,16 @@ body,
   transform-origin: 0%;
 }
 
-.animation {
-  animation: animate 0.5s normal infinite;
+.noise {
+  animation: animate 0.5s linear infinite both;
+
   background: url("https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png");
 }
 
 @keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
   100% {
     background-position: 100% 100%;
   }
