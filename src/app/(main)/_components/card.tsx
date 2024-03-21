@@ -40,7 +40,7 @@ const Card = ({
   return (
     <div
       ref={container}
-      className={`w-full  flex items-center justify-center sticky top-36 text-[${text}]`}
+      className={`w-full  flex items-center justify-center sticky top-64 text-[${text}]`}
     >
       <motion.div
         style={{
@@ -48,7 +48,7 @@ const Card = ({
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
-        className="flex flex-col relative  w-full h-full transform-origin-top p-10 rounded-t-xl "
+        className="flex flex-col relative   w-full h-full transform-origin-top p-5 lg:p-10 rounded-t-xl "
       >
         <div
           className={`w-full flex items-center justify-between font-mono text-[${text}]`}
@@ -58,7 +58,7 @@ const Card = ({
         </div>
         <hr className={`bg-[${text}] my-3`} />
         <div className="group w-full flex gap-3 justify-between items-center">
-          <h3 className=" font-manrope text-3xl  my-4">{title}</h3>
+          <h3 className=" font-manrope text-xl lg:text-3xl  my-4">{title}</h3>
 
           <ArrowRight
             size={50}
@@ -70,7 +70,7 @@ const Card = ({
           {description}
         </p> */}
 
-        <div className="relative h-[300px] lg:h-[500px] w-full">
+        <div className="relative h-[400px] lg:h-[500px] w-full">
           <motion.div style={{ scale: imageScale }} className="">
             <Image
               fill

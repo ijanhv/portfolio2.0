@@ -6,7 +6,7 @@ export const Hello = () => {
   return (
     <Container>
       <Lines>
-        <div className="h-full md:h-screen flex flex-col md:flex-row gap-36 items-start mt-20  ">
+        <div className="h-full  flex flex-col md:flex-row gap-36 items-start my-20  ">
           <div className="h-[600px] w-full md:h-[700px] md:w-[1700px] noise relative">
             <Image
               src="	https://framerusercontent.com/images/INr3fWPwNzKVuKbZgjxl5xvZaSA.jpg?scale-down-to=2048"
@@ -25,7 +25,7 @@ export const Hello = () => {
               <hr className="w-full bg-foreground/60 h-0.5" />
             </div>
 
-            <p className="text-foreground/50 text-3xl md:text-4xl leading-loose ">
+            <p className="text-foreground/50 text-3xl font-light  ">
               my craft is building experiences that bring value to people and
               celebrate function over form. let{"'"}s hide the ego and give some
               freedom to creativity and make the first small step changing the

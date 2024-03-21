@@ -23,7 +23,7 @@ export const About = () => {
             </p>
           </div>
           <div className="w-full h-full  flex items-center lg:justify-end">
-            <motion.div className="relative h-[500px] w-[465px]">
+            <motion.div className="relative h-[350px] lg:h-[500px] w-[465px] my-10">
               <Image
                 src="https://media.istockphoto.com/id/608509640/photo/night-portrait.jpg?s=612x612&w=0&k=20&c=m5ofFvM21wu3U9zd4pQTTJT8QhkkqfPBVc2bJ56xjw0="
                 fill

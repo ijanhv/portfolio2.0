@@ -40,7 +40,7 @@ export const Notes = () => {
               <hr className="w-full bg-foreground/60 h-0.5" />
             </div>
 
-       {/* <div className="h-full w-full  noise	">
+            {/* <div className="h-full w-full  noise	">
          <Image
                 src="https://framerusercontent.com/images/u5jNVG9wj9EcOdKVCMRYRudfPs.jpg?scale-down-to=1024"
                 fill
@@ -49,7 +49,6 @@ export const Notes = () => {
                 unoptimized
               /> 
             </div>  */}
-
 
             <div className="flex flex-col gap-4 w-full mt-20 ">
               {notes.map((note, i) => (
@@ -98,7 +97,7 @@ const SingNote = ({
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: -30, opacity: 0 }}
           transition={{ duration: 0.4 }}
-          className="h-48 w-[154px] absolute right-[9.7rem] noise"
+          className="h-48 w-[154px] absolute right-[9.7rem] noise hidden lg:block "
         >
           <Image
             src={image}

@@ -1,6 +1,6 @@
 import React from "react";
 import { HeroSection } from "./_components/hero-section";
-import Available from "./_components/available";
+import Available from "../../components/common/available";
 import { Projects } from "./_components/projects";
 import { About } from "./_components/about";
 import { Notes } from "./_components/notes";
