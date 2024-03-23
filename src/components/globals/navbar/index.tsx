@@ -9,7 +9,7 @@ export const Navbar = () => {
   const links = [
     {
       name: "projects",
-      href: "/",
+      href: "/projects",
     },
     {
       name: "about",
@@ -21,7 +21,7 @@ export const Navbar = () => {
     },
     {
       name: "contact",
-      href: "/",
+      href: "/contact",
     },
   ];
   return (
@@ -45,7 +45,7 @@ export const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Menu className="text-foreground/40" />
+        <Menu className="text-foreground/40 md:hidden" />
       </div>
 
       <Scroll />

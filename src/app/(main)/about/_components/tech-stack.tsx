@@ -49,13 +49,6 @@ export const TechStack = () => {
     <Container>
       <Lines>
         <div className="h-full flex flex-col gap-20 pt-36 ">
-          <div className="flex items-center gap-3">
-            <p className="font-mono text-foreground/60 flex-shrink-0">
-              .tech stack
-            </p>
-            <hr className="w-full bg-foreground/30 h-0.5" />
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[9.6rem] w-full h-full">
             {techStack.map((tech, i) => (
               <StackCard
@@ -83,7 +76,7 @@ const StackCard = ({
 }) => {
   return (
     <div className="flex items-center gap-4 w-full  justify-between group">
-      <div className="space-y-3">
+      <div className="space-y-3 flex flex-row gap-6 lg:flex-col">
         <div className="noise relative h-[70px] w-[70px]">
           <Image
             src={icon}
@@ -99,7 +92,7 @@ const StackCard = ({
         </div>
       </div>
 
-      <div className="flex items-center justify-between relative">
+      <div className="flex items-center justify-between relative ">
         <hr className="w-full bg-[#252525] h-[1px]  " />
         <div className="h-8 w-8 rounded-full border border-foreground/30 absolute group -right-4  cursor-pointer">
           <div className="h-[1px] w-20 items-center mx-auto bg-foreground/20 absolute top-[0.8rem] -right-6 line transform transition duration-500 ease-in-out group-hover:rotate-180" />

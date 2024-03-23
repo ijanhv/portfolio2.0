@@ -34,7 +34,7 @@ export const WorkExperience = () => {
             <hr className="w-full bg-foreground/60 h-0.5" />
           </div>
 
-          <div className="flex flex-col gap-24 w-full pt-10">
+          <div className="flex flex-col gap-24 w-full lg:pt-10">
             {workExperience.map((work, i) => (
               <SingWorkExperience
                 key={i}
@@ -64,7 +64,7 @@ const SingWorkExperience = ({
 }) => {
   return (
     <>
-      <div className="flex items-center justify-between md:flex-row flex-col gap-x-32 w-full ">
+      <div className="flex items-center justify-between md:flex-row flex-col gap-x-32 gap-y-3 w-full ">
         <p className="text-foreground/70 text-3xl w-full">{duration}</p>
 
         <div className="flex flex-col gap-2 w-full">

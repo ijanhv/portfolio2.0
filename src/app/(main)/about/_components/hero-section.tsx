@@ -45,7 +45,9 @@ export const HeroSection = () => {
                   <p className="text-foreground/50 font-mono">.{item.title}</p>
                   <hr className="w-full bg-foreground/50 h-[1px]" />
                 </div>
-                <p className="text-foreground/70 text-3xl">{item.desc}</p>
+                <p className="text-foreground/70 text-xl lg:text-3xl">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
