@@ -1,5 +1,6 @@
 import { Container } from "@/components/common/container";
 import { Lines } from "@/components/common/lines";
+import { Title } from "@/components/common/title";
 import Image from "next/image";
 import React from "react";
 export const TechStack = () => {
@@ -49,6 +50,9 @@ export const TechStack = () => {
     <Container>
       <Lines>
         <div className="h-full flex flex-col gap-20 pt-36 ">
+        <Title
+            title="tech stack"
+            />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[9.6rem] w-full h-full">
             {techStack.map((tech, i) => (
               <StackCard

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "@/components/common/container";
 import { Lines } from "@/components/common/lines";
+import { Title } from "@/components/common/title";
 
 export const WorkExperience = () => {
   const workExperience = [
@@ -26,13 +27,10 @@ export const WorkExperience = () => {
   return (
     <Container>
       <Lines>
-        <div className="h-full my-10 flex flex-col gap-5 w-full md:h-screen ">
-          <div className="flex items-center gap-3">
-            <p className="font-mono text-foreground/60 flex-shrink-0">
-              .work experience
-            </p>
-            <hr className="w-full bg-foreground/60 h-0.5" />
-          </div>
+        <div className="h-full my-10 flex flex-col gap-5 w-full md:h-screen mt-24 ">
+          <Title 
+          title="work experience"
+          />
 
           <div className="flex flex-col gap-24 w-full lg:pt-10">
             {workExperience.map((work, i) => (

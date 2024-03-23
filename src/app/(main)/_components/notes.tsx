@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Title } from "@/components/common/title";
 
 export const Notes = () => {
   const notes = [
@@ -31,14 +32,14 @@ export const Notes = () => {
   return (
     <Container>
       <Lines>
-        <div className="h-full md:h-screen flex flex-col lg:flex-row  pt-10 ">
+        <div className="h-full md:h-screen flex flex-col lg:flex-row  pt-20 ">
           <div className="w-full flex flex-col gap-4 items-center justify-center">
-            <div className="flex items-center gap-4 w-full">
-              <p className="font-mono text-foreground/60  flex-shrink-0">
-                .three latest notes
-              </p>
-              <hr className="w-full bg-foreground/60 h-0.5" />
-            </div>
+           <div className="w-full">
+           <Title
+            title="three latest notes"
+            />
+           </div>
+           
 
             {/* <div className="h-full w-full  noise	">
          <Image
@@ -50,7 +51,7 @@ export const Notes = () => {
               /> 
             </div>  */}
 
-            <div className="flex flex-col gap-4 w-full mt-20 ">
+            <div className="flex flex-col gap-4 w-full mt-16 ">
               {notes.map((note, i) => (
                 <SingNote
                   key={i}

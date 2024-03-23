@@ -9,7 +9,7 @@ export const About = () => {
   return (
     <Container>
       <Lines>
-        <div className="h-full md:h-screen flex flex-col lg:flex-row  pt-10 ">
+        <div className="h-full md:h-screen flex flex-col lg:flex-row  pt-20 ">
           <div className="w-full flex flex-col gap-4 items-center justify-center">
             <div className="flex items-center gap-4 w-full">
               <span className="font-mono text-foreground/60">.about</span>
