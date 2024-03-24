@@ -18,7 +18,11 @@ export const HeroSection = () => {
           </div>
 
           <div className="w-full items-center justify-center flex">
-            <p className="text-foreground/50 text-left text-3xl md:text-4xl lg:text-6xl mx-auto max-w-[58rem] leading-[1.9rem]">
+            <p
+              className="text-left text-3xl
+            text-gradient2
+            md:text-4xl lg:text-6xl mx-auto max-w-[58rem] leading-[1.9rem]"
+            >
               I help startups and series A—D teams to establish a strong
               connection between their product and customers
             </p>

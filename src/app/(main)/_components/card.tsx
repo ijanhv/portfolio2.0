@@ -15,9 +15,11 @@ const Card = ({
   progress,
   range,
   targetScale,
+  type,
 }: {
   i: number;
   title: string;
+  type: string;
   description: string;
   src: string;
   url: string;
@@ -36,27 +38,28 @@ const Card = ({
 
   const imageScale = useTransform(scrollYProgress, [0, 1], [1, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
-
+  // color: "#2F3437",
+  // text: "#B3FFCB",
   return (
     <div
       ref={container}
-      className={`w-full  flex items-center justify-center sticky top-64 text-[${text}]`}
+      className={`w-full  flex items-center justify-center sticky top-64 text-[#B3FFCB]`}
     >
       <motion.div
         style={{
-          backgroundColor: color,
+          backgroundColor: "#2F3437",
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
-        className="flex flex-col relative   w-full h-full transform-origin-top p-5 lg:p-10 rounded-t-xl "
+        className="flex flex-col relative shadow-lg  w-full h-full transform-origin-top p-5 lg:p-10 rounded-t-xl "
       >
         <div
           className={`w-full flex items-center justify-between font-mono text-[${text}]`}
         >
           <p className={``}>2023</p>
-          <p>Personal Project</p>
+          <p>{type}</p>
         </div>
-        <hr className={`bg-[${text}] my-3`} />
+        <hr className={`bg-[#B3FFCB]/30 my-3 h-[2px]`} />
         <div className="group w-full flex gap-3 justify-between items-center">
           <h3 className=" font-manrope text-xl lg:text-3xl  my-4">{title}</h3>
 

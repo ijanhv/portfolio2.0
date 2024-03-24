@@ -6,8 +6,13 @@ export const HeroSection = () => {
   return (
     <Container>
       <Lines>
-        <div className="flex items-center justify-center h-full md:h-screen py-32 md:py-5 ">
-          <div className="text-foreground/45 text-4xl md:text-7xl lg:text-9xl text-left ">
+        <div className="flex items-center justify-center h-full md:h-screen py-32 md:py-5 relative  antialiased overflow-hidden">
+          <div
+            className=" text-4xl md:text-7xl lg:text-9xl text-left 
+          
+          text-gradient
+          "
+          >
             a developer focusing on crisp and catchy
             <br />
             <TextAnimation />

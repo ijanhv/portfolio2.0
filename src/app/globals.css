@@ -25,6 +25,14 @@ body,
   background: url("https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png");
 }
 
+.text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-tr from-foreground/10 via-foreground/60 to-foreground/20;
+}
+
+.text-gradient2 {
+  @apply text-transparent bg-clip-text bg-gradient-to-tr from-foreground/70 to-foreground/50;
+}
+
 .box {
   width: 100%;
   height: 500px;

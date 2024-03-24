@@ -18,7 +18,7 @@ export const HeroSection = () => {
           </div>
 
           <div className="w-full items-center justify-center flex">
-            <p className="text-foreground/50 text-left text-3xl md:text-4xl lg:text-6xl mx-auto max-w-[58rem] leading-[1.4] mb-10">
+            <p className="text-gradient2 text-left text-3xl md:text-4xl lg:text-6xl mx-auto max-w-[58rem] leading-[1.4] mb-10">
               let{"'"}s collaborate. feel free to drop me a line about your
               project or follow me on social networks
             </p>

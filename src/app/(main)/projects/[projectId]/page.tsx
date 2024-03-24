@@ -19,8 +19,8 @@ export default function ProjectDetailsPage({
         image={project.src}
         id={Number(params.projectId)}
       />
-      <ProjectDetails />
-      <ProjectImages />
+      <ProjectDetails techStack={project.techStack} />
+      <ProjectImages images={project.images} />
 
       <Hello />
     </>

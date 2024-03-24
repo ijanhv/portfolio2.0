@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 import { Navbar } from "@/components/globals/navbar";
+import { Footer } from "@/components/globals/footer";
 
 export const metadata: Metadata = {
   title: "Janhavi Patil",
@@ -16,6 +17,7 @@ export default function MainLayout({
     <>
       <Navbar />
       {children}
+      <Footer />
     </>
   );
 }

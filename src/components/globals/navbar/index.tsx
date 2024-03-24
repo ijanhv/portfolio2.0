@@ -26,7 +26,7 @@ export const Navbar = () => {
   ];
   return (
     // <Container>
-    <div className=" h-20 sticky top-0 bg-black z-30">
+    <div className=" h-20 sticky top-0 bg-black/70 z-30 backdrop-blur-md ">
       <div className="flex items-center justify-between px-10 max-w-7xl lg:px-5 mx-auto h-full">
         <Logo />
 

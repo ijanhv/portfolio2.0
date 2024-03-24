@@ -5,7 +5,7 @@ import { Container } from "@/components/common/container";
 import { Lines } from "@/components/common/lines";
 import Image from "next/image";
 
-export const ProjectDetails = () => {
+export const ProjectDetails = ({ techStack }: { techStack: string[] }) => {
   return (
     <Container>
       <Lines>
@@ -77,10 +77,8 @@ export const ProjectDetails = () => {
                   </p>
                   <hr className="w-full bg-foreground/30 h-0.5" />
                 </div>
-                <p className="text-foreground/60 leading-loose  ">
-                  next.js, tailwindcss, framer-motion, typescript next.js,
-                  tailwindcss, framer-motion, typescript next.js, tailwindcss,
-                  framer-motion, typescript
+                <p className="text-foreground/60 leading-loose lowercase ">
+                  {techStack.join(", ")}
                 </p>
               </div>
             </div>

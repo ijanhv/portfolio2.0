@@ -34,12 +34,9 @@ export const Notes = () => {
       <Lines>
         <div className="h-full md:h-screen flex flex-col lg:flex-row  pt-20 ">
           <div className="w-full flex flex-col gap-4 items-center justify-center">
-           <div className="w-full">
-           <Title
-            title="three latest notes"
-            />
-           </div>
-           
+            <div className="w-full">
+              <Title title="three latest notes" />
+            </div>
 
             {/* <div className="h-full w-full  noise	">
          <Image

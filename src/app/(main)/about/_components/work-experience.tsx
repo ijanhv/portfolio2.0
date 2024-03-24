@@ -6,31 +6,43 @@ import { Title } from "@/components/common/title";
 export const WorkExperience = () => {
   const workExperience = [
     {
-      duration: "2021 - Present",
-      position: "Software Engineer",
-      company: "Google",
-      desc: "Spearhead the design direction and strategy for a range of cutting-edge products.",
+      duration: "Nov 2022 - Feb 2023",
+      position: "Web Developer",
+      company: "Webskyne",
+      desc: "Developed a range of web applications for clients using Nextjs and Nestjs.",
+    },
+
+    {
+      duration: "Aug 2023 - Present",
+      position: "Full Stack Developer",
+      company: "Cosedege",
+      desc: "Contributing to various client projects using Next.js, TypeScript, MongoDB, Prisma, and Tailwind CSS. In addition to my technical responsibilities, I actively participate in meetings to ensure seamless collaboration.",
+    },
+
+    {
+      duration: "Dec 2021 - Aug 2022",
+      position: "Jr. Public Relations Officer",
+      company: "CSI VESIT",
+      desc: "Created promotional content such as social media posts and flyers to generate interest and increase attendance. Involved in promoting and creating awareness about the various events and workshops organized by CSI-VESIT",
     },
     {
-      duration: "2019 - 2021",
-      position: "Frontend Developer",
-      company: "Facebook",
-      desc: "Lead a team of designers and developers to create a range of digital products.",
+      duration: "Jul 2023 - Present",
+      position: "Student Design Head",
+      company: "VESITConnect",
+      desc: "Collaborated with other team members to curate engaging content and lead the design team to ensure visually appealing and professional publications.",
     },
     {
-      duration: "2017 - 2019",
-      position: "UI/UX Designer",
-      company: "Apple",
-      desc: "Worked closely with the product team to design and develop a range of digital products.",
+      duration: "Jan 2022 - March 2023",
+      position: "Freelance Graphic Designer",
+      company: "VESCOP",
+      desc: "Designed and laid out a 120-page college annual magazine and a 50-page brochure featuring articles, interviews, and photographs on InDesign.",
     },
   ];
   return (
     <Container>
       <Lines>
-        <div className="h-full my-10 flex flex-col gap-5 w-full md:h-screen mt-24 ">
-          <Title 
-          title="work experience"
-          />
+        <div className="h-full my-10 flex flex-col gap-5 w-full mt-24 ">
+          <Title title="work experience" />
 
           <div className="flex flex-col gap-24 w-full lg:pt-10">
             {workExperience.map((work, i) => (
@@ -77,9 +89,9 @@ const SingWorkExperience = ({
       </div>
 
       <div className="flex items-center justify-between relative ">
-        <hr className="w-full bg-[#252525] h-[1px]  absolute top-0 " />
-        <div className="h-10 w-10 rounded-full border border-foreground/30 absolute -right-5 group cursor-pointer">
-          <div className="h-[1px] w-20 items-center mx-auto bg-[#252525] absolute top-[1.20rem] -right-[1rem] line transform transition duration-500 ease-in-out group-hover:rotate-180" />
+        <hr className="w-full bg-[#252525] h-[1px]  absolute top-0" />
+        <div className="h-7 w-7 rounded-full border border-foreground/30 absolute -right-3 group cursor-pointer">
+          <div className="h-[1px] w-20 items-center mx-auto bg-[#252525] absolute top-[0.8rem] -right-[1.4rem] line transform transition duration-500 ease-in-out group-hover:rotate-180" />
         </div>
       </div>
     </>

@@ -11,12 +11,8 @@ export const Hello = () => {
         <div className="h-full md:h-screen flex flex-col lg:flex-row  pt-10 ">
           <div className="w-full flex flex-col gap-4 items-center justify-center">
             <div className="w-full">
-
-
-            <Title
-            title="say hello"
-            />
-                        </div>
+              <Title title="say hello" />
+            </div>
 
             <div className="flex items-start justify-start w-full flex-col gap-10">
               <p className="font-manrope text-xl sm:text-2xl md:text-4xl lg:text-6xl leading-loose text-foreground/60  mt-10 w-4/5 text-left ">
