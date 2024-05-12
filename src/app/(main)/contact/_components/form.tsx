@@ -96,7 +96,7 @@ export const ContactMeForm = () => {
         name="message"
         placeholder="Message"
         className="bg-foreground/10 p-4 focus:outline-none focus:ring-0 focus:ring-opacity-0"
-        rows={7}
+        rows={9}
       />
       <button className="bg-primary p-4 text-black w-full" type="submit">
         {loading ? "Sending..." : "Send"}

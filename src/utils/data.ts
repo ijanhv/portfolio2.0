@@ -162,3 +162,22 @@ export const projects = [
     ],
   },
 ];
+
+export const links = [
+  {
+    name: "projects",
+    href: "/projects",
+  },
+  {
+    name: "about",
+    href: "/about",
+  },
+  {
+    name: "notes",
+    href: "/",
+  },
+  {
+    name: "contact",
+    href: "/contact",
+  },
+];

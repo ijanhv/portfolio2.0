@@ -12,8 +12,8 @@ export const HeroSection = () => {
               say hello
             </h3>
 
-            <div className="h-10 w-10 rounded-full border border-foreground/40 absolute -right-5 top-24 lg:top-28 items-center justify-center group cursor-pointer">
-              <div className="h-[1px] w-20 top-1/2 -right-1/2 absolute bg-foreground/40 line transform transition duration-500 ease-in-out group-hover:rotate-180" />
+            <div className="h-7 w-7 rounded-full border border-foreground/40 absolute -right-3 top-24 lg:top-28 items-center justify-center group cursor-pointer">
+              <div className="h-[1px] w-20 top-[0.8rem] -right-[1.8rem] absolute bg-foreground/40 line transform transition duration-500 ease-in-out group-hover:rotate-180" />
             </div>
           </div>
 

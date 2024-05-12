@@ -1,6 +1,12 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
+import {
+  FaCalendarDay,
+  FaGithub,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import Link from "next/link";
 
 export const Socials = () => {
   const socials = [
@@ -21,14 +27,21 @@ export const Socials = () => {
     },
     {
       name: "Instagram",
-      url: "https://www.instagram.com/patil_janhavi7",
+      url: "https://www.instagram.com/janv.codes",
       icon: FaInstagram,
+    },
+    {
+      name: "Book a Call",
+      url: "https://calendly.com/janhavi-patil-work/30min",
+      icon: FaCalendarDay,
     },
   ];
   return (
-    <div className="w-full flex flex-col gap-10 ">
+    <div className="w-full flex flex-col gap-10 mb-10">
       {socials.map((social, i) => (
-        <div
+        <Link
+          target="_blank"
+          href={social.url}
           key={i}
           className="flex items-center gap-2 w-full justify-between  relative group"
         >
@@ -53,7 +66,7 @@ export const Socials = () => {
             />
           </div>
 
-          <div className="mx-3">
+          <div className="">
             <p className="text-foreground/60 text-base">{social.name}</p>{" "}
           </div>
 
@@ -61,7 +74,7 @@ export const Socials = () => {
           <div className="h-7 w-7 rounded-full border border-foreground/30 absolute right-0 lg:-right-4 items-center justify-center group cursor-pointer">
             <div className="h-[1px] w-20 top-1/2 -right-[1.5rem] absolute bg-foreground/30 line transform transition duration-500 ease-in-out group-hover:rotate-180" />
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

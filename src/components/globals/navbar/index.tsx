@@ -3,27 +3,10 @@ import Link from "next/link";
 
 import { Scroll } from "./scroll";
 import { Logo } from "./logo";
-import { Menu } from "lucide-react";
+import { links } from "@/utils/data";
+import { Sidebar } from "./sidebar";
 
 export const Navbar = () => {
-  const links = [
-    {
-      name: "projects",
-      href: "/projects",
-    },
-    {
-      name: "about",
-      href: "/about",
-    },
-    {
-      name: "notes",
-      href: "/",
-    },
-    {
-      name: "contact",
-      href: "/contact",
-    },
-  ];
   return (
     // <Container>
     <div className=" h-20 sticky top-0 bg-black/70 z-30 backdrop-blur-md ">
@@ -45,7 +28,10 @@ export const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Menu className="text-foreground/40 md:hidden" />
+
+        <div className="md:hidden">
+          <Sidebar />
+        </div>
       </div>
 
       <Scroll />

@@ -51,7 +51,7 @@ const Card = ({
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
-        className="flex flex-col relative shadow-lg  w-full h-full transform-origin-top p-5 lg:p-10 rounded-t-xl "
+        className="flex flex-col relative shadow-lg  w-full h-full transform-origin-top p-3 lg:p-10 rounded-t-xl "
       >
         <div
           className={`w-full flex items-center justify-between font-mono text-[${text}]`}
@@ -73,7 +73,7 @@ const Card = ({
           {description}
         </p> */}
 
-        <div className="relative h-[400px] lg:h-[500px] w-full">
+        <div className="relative h-[250px] lg:h-[500px] w-full">
           <motion.div style={{ scale: imageScale }} className="">
             <Image
               fill
